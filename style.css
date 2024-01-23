@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color:#000832;
+}
+#bgImage{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    /* image: url("./images/bg-desktop.png"); */
+    /* mask-image: url("./images/bg-desktop.png"); */
+}   
+.container{
+    margin-top: 300px;
+}
+
+.MainFiles{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.FyloInfo{
+    background-color: hsl(228, 56%, 26%);
+    text-align: left;
+    padding: 30px 100px 30px 50px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+
+}
+
+.usedStorage{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.boldFont{
+    font-weight: 700;
+}
+.documentsIcons div{
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    /* margin-left: 10px; */
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.col-md-12{
+    margin: 0%;
+
+}
+.stroageDetails{
+    padding: 20px;
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    color: white; 
+    top: 10;
+}
+.firstStep{
+    font-weight: 400;
+    font-size: 14px;
+}
+.msgBox{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    padding: 20px;
+    font-size: 14px;
+    color: #000832;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-weight: 700;
+    border-radius: 5px 5px 1px 5px;
+    margin: 20px;
+
+}
+.msgBox span{
+    color:  hsl(229, 7%, 55%);
+    text-transform: capitalize;
+}
+.msgBox::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-left: -10px; /* Adjust this value based on your arrow size */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent;
+}
+input[type=range]{
+    background: white ;
+}
+.firstStep{
+    position: relative;
+}
+.inputBg{
+    width: 100%;
+    position: relative;
+    background-color: #000832;
+    border-radius: 20px;
+    padding: 5px;
+}
+.colorG{
+    width: 600px;
+    padding: 0;
+    height: 20px;
+    border-radius: 20px;
+    background:linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));   
+}
+.iconObject{
+    /* content: ""; */
+    height: 19px;
+    width: 19px;
+    margin-left: 577px;
+    /* position: absolute; */
+    background-color: white;
+    border-radius: 50px;
+}
+@media screen and (max-width : 992px) {
+    .colorG{
+        width: 230px; 
+    }
+    .iconObject{
+        margin-left: 209px;
+    }
+    .msgBox{
+        position: absolute;
+        right: 50px;
+        left: 50px;
+        bottom: -180px;
+        padding: 20px;
+        font-size: 20px;
+        color: #000832;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        font-weight: 700;
+        border-radius: 5px 5px 5px 5px;
+        margin: 20px;
+    
+    }
+    .msgBox::before{
+        content: "";
+        position: relative;
+    }
+}
